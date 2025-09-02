@@ -1,0 +1,11 @@
+<%- include('partials/head') %>
+<%- include('partials/navbar') %>
+<main class="container my-4">
+  <h1><%= user.nome %></h1>
+  <p><strong>Email:</strong> <%= user.email %></p>
+  <p><strong>Telefone:</strong> <%= user.telefone %></p>
+
+  <a href="/usuarios/<%= user.id %>/edit" class="btn btn-primary me-2"><i class="bi bi-pencil"></i> Editar</a>
+  <a href="/usuarios" class="btn btn-secondary">Voltar</a>
+</main>
+<%- include('partials/footer') %>
